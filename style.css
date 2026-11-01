@@ -1,0 +1,21 @@
+:root{--bg:#0d1220;--card:#18213a;--line:#26314f;--fg:#eef1f8;--dim:#9aa5c2;--acc:#5fd4b8}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+a{color:var(--acc)}
+header{border-bottom:1px solid var(--line);padding:16px}
+header .in,main,footer .in{max-width:860px;margin:0 auto}
+header .in{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:26px;font-weight:900;color:#06231d;
+  background:linear-gradient(135deg,#a8f5e2,#2fa58b)}
+header b{font-size:22px;color:var(--acc)}
+nav{margin-inline-start:auto;display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+main{padding:24px 16px 40px}
+h1{font-size:28px;margin:0 0 6px}
+h2{font-size:19px;margin:28px 0 8px;color:var(--acc)}
+.dim{color:var(--dim)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0}
+.ar{direction:rtl;text-align:right}
+ul{padding-inline-start:22px}
+code{background:#0a0f1b;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:13px}
+footer{border-top:1px solid var(--line);padding:22px 16px;text-align:center;color:var(--dim);font-size:14px}
+footer img{width:220px;max-width:70%;border-radius:12px;display:block;margin:0 auto 10px}
