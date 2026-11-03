@@ -11,7 +11,7 @@
   <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="data-deletion.html">Data deletion</a></nav></div></header>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="dim">Effective date: 1 November 2026 · Applies to the Nashir desktop application by Syntrix Fikra.</p>
+  <p class="dim">Effective date: 3 November 2026 · Applies to the Nashir desktop application by Syntrix Fikra.</p>
 
   <h2>1. Summary</h2>
   <p>Nashir runs entirely on your own computer. It has no server and no user accounts of its own, and it does not collect,
@@ -29,12 +29,22 @@
     <li><b>TikTok</b> (scopes <code>user.info.basic</code>, <code>video.upload</code>, optionally <code>video.publish</code>): Nashir reads your display
     name, sends the videos you queue to your TikTok account (as drafts, or as posts if you choose), and reads their upload status.</li>
   </ul>
+  <ul>
+    <li><b>Google Gemini</b> (optional, off by default): only if you choose “Gemini” as the caption method and paste your
+    own Gemini API key, Nashir sends the video title and the channel name you typed to the Gemini API to write a
+    description and hashtags. This is governed by Google's Gemini API terms; on Gemini's free tier Google may use what is
+    sent to improve its products. Never put private information in a video title if you use this option.</li>
+    <li><b>Thumbnails</b> (optional): only when you click “Draw pictures”, a short English description of a scene made from
+    the video title is sent to a free image service (AI Horde or Pollinations) to paint a picture. The title text is
+    written on the picture on your computer, and the finished thumbnail goes only to the platforms you publish to.</li>
+  </ul>
   <p>Nashir does not read your messages, comments, contacts, analytics, other videos or any other data.</p>
 
   <h2>3. Where data is stored</h2>
   <p>Access tokens, the app keys you enter, your queue (video file paths, captions, times) and a log of uploads are saved
   only in the <code>data</code> folder next to the program on your computer. They are never sent to Syntrix Fikra or to anyone
-  else. Videos are sent only to the platform you selected for them.</p>
+  else. Videos are sent only to the platform you selected for them, and video titles to Gemini only if you turned that
+  option on.</p>
 
   <h2>4. Sharing</h2>
   <p>We do not sell, rent, transfer or disclose any user data. We do not use it for advertising, and we do not use it to
@@ -70,6 +80,10 @@
       <li><b>يوتيوب:</b> يرفع الفيديوهات التي تختارها إلى قناتك، ويقرأ اسم القناة وحالة ظهور الفيديوهات التي رفعها فقط.</li>
       <li><b>فيسبوك:</b> يعرض صفحاتك لتختار واحدة، وينشر عليها الريلز التي تختارها، ويقرأ حالة معالجتها.</li>
       <li><b>تيك توك:</b> يقرأ اسمك الظاهر، ويرسل فيديوهاتك إلى حسابك كمسودات (أو منشورات إن اخترت)، ويقرأ حالة الرفع.</li>
+      <li><b>Gemini (اختياري، معطّل افتراضيًا):</b> فقط إن اخترته ووضعت مفتاحك، يُرسل عنوان الفيديو واسم قناتك إلى Gemini
+      لكتابة الوصف والهاشتاغات، وتطبَّق شروط Google. في الخطة المجانية قد تستعمل Google ما يُرسل لتحسين خدماتها، فلا تضع معلومات خاصة في العنوان.</li>
+      <li><b>الصور المصغّرة (اختياري):</b> فقط عند ضغط «ارسم صورًا» يُرسل وصف قصير بالإنجليزية لمشهد مأخوذ من العنوان إلى خدمة رسم مجانية
+      (AI Horde أو Pollinations). العنوان نفسه يُكتب على الصورة في حاسوبك، والصورة النهائية لا تذهب إلا إلى المنصات التي تنشر عليها.</li>
     </ul>
     <p>رموز الدخول والمفاتيح والجدولة والسجل تُحفظ فقط في مجلد <code>data</code> على حاسوبك، ولا تُرسل إلينا ولا إلى أي طرف آخر.
     استعمال بيانات Google يلتزم بسياسة بيانات مستخدمي Google API بما فيها شروط الاستعمال المحدود، وبربط يوتيوب توافق على
